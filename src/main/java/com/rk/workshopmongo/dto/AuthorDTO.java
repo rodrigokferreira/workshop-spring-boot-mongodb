@@ -1,6 +1,7 @@
 package com.rk.workshopmongo.dto;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import com.rk.workshopmongo.domain.User;
 
@@ -9,6 +10,7 @@ public class AuthorDTO implements Serializable {
 	
 	private String id;
 	private String name;
+	private Date date;
 	
 	public AuthorDTO(){
 	}
@@ -32,6 +34,14 @@ public class AuthorDTO implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	
